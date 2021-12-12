@@ -24,6 +24,6 @@ hour.addEventListener("change", function () {
   } else if (hour.value > 24) {
     hour.value = 24;
   }
-  연산 = Math.floor(10000 / hour.value);
+  연산 = Math.ceil(10000 / hour.value);
   document.querySelector("#hour-come").innerHTML = 연산;
 });
