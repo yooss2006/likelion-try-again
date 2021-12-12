@@ -33,12 +33,13 @@
     <section class="sec-inp">
       <h2 class="blind">1만시간 계산</h2>
       <p class="inp-expert">
-        나는 <input type="text" placeholder="예)프로그래밍" /> 전문가가 될
-        것이다.
+        나는
+        <input type="text" placeholder="예)프로그래밍" id="expert" /> 전문가가
+        될 것이다.
       </p>
       <p class="inp-time">
         <span class="inp-line_break">그래서 앞으로 매일 하루에</span
-        ><input type="number" placeholder="예)5시간" />
+        ><input type="number" placeholder="예)5시간" id="hour" />
         시간씩 훈련할 것이다.
       </p>
       <button type="button" class="inp-btn">
@@ -46,13 +47,13 @@
       </button>
       <!-- <img src="./img/click.png" alt="손모양 계산 버튼" class="inp-img" /> -->
     </section>
-    <section class="sec-result">
+    <section class="sec-result hide-result">
       <h2 class="blind">1만시간 계산 결과 확인</h2>
       <p class="result-expert">
-        당신은 <strong>프로그래밍 </strong>전문가가 되기 위해서
+        당신은 <strong id="expert-come"> </strong>전문가가 되기 위해서
       </p>
       <p class="result-time">
-        대략 <strong>5100</strong>일 이상 훈련하셔야 합니다!:)
+        대략 <strong id="hour-come"></strong>일 이상 훈련하셔야 합니다!:)
       </p>
       <a href="#" class="result-btn result-training">훈련하러 가기 GO!GO!</a>
       <a href="#" class="result-btn result-share">공유하기</a>
@@ -67,5 +68,6 @@
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

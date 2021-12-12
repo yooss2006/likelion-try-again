@@ -163,6 +163,9 @@ body {
 .sec-result .result-share {
   background-color: #fff;
 }
+.hide-result {
+  display: none;
+}
 
 .footer {
   margin-top: 130px;
