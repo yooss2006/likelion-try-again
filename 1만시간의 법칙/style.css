@@ -22,14 +22,23 @@ body {
   transform: translateX(-50%);
   z-index: 20;
 }
-.tit .tit__img-background {
+.tit::after {
+  width: 221px;
+  height: 225px;
+  content: "";
+  background: url(./img/loading.png);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .tit .tit__img-background {
   width: 221px;
   height: 225px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-}
+} */
 
 .sec-word {
   position: relative;
@@ -48,19 +57,31 @@ body {
   margin-top: 13px;
 }
 
-.sec-word .word-img {
+.sec-word::after {
+  content: "";
+  width: 493px;
+  height: 33px;
+  background: url(./img/quotes.png) no-repeat;
   position: absolute;
   top: 124px;
   left: 50%;
   transform: translateX(-50%);
 }
+/* 
+.sec-word .word-img {
+  position: absolute;
+  top: 124px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
 .sec-inp {
   margin-top: 92px;
   font-size: 24px;
   position: relative;
 }
 
-.sec-inp input {
+.sec-inp .inp-expert input,
+.sec-inp .inp-time input {
   padding: 11px 10px;
   margin: 27px 17px 0 17px;
   font-size: 24px;
@@ -79,10 +100,18 @@ body {
   background-color: #fcee21;
   color: #5b2386;
 }
-.sec-inp .inp-img {
+.sec-inp:after {
+  width: 64px;
+  height: 72px;
+  background: url(./img/click.png);
+  content: "";
   position: absolute;
   top: 313px;
 }
+/* .sec-inp .inp-img {
+  position: absolute;
+  top: 313px;
+} */
 
 .sec-result {
   margin-top: 192px;
@@ -94,7 +123,8 @@ body {
 .result-time {
   margin-bottom: 148px;
 }
-.sec-result strong {
+.sec-result .result-expert strong,
+.sec-result .result-time strong {
   font-family: "GmarketSansBold";
   vertical-align: middle;
   font-size: 72px;
