@@ -5,91 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>영화목록페이지</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>정글 시네마</h1>
-    <section>
-      <h2>정글 시네마 영화 목록</h2>
+    <h1 class="blind">정글 시네마</h1>
+    <section class="cont-main">
+      <h2 class="tit-main">정글 시네마 영화 목록</h2>
       <header>
-        <h3>영화 정보 목록</h3>
+        <h3 class="blind">영화 정보 목록</h3>
         <nav>
-          <ul>
-            <li>현재상영영화</li>
+          <ul class="nav-list">
+            <li id="nav-list-on">현재상영영화</li>
             <li>개봉예정영화</li>
             <li>박스오피스</li>
           </ul>
         </nav>
       </header>
 
-      <section>
-        <h3>현재 상영영화 정보</h3>
+      <section class="cont-movie">
+        <h3 class="blind">현재 상영영화 정보</h3>
         <ul>
           <li>
-            <article>
-              <h4>영화 상세 정보</h4>
-              <a href="#">
+            <article class="cont-item">
+              <h4 class="blind">영화 상세 정보</h4>
+              <a href="#" class="item-img">
                 <img
                   src="./img/포스터_위니브월드.png"
                   alt="위니브월드 상세 정보 페이지로 이동합니다."
                 />
               </a>
-              <strong> 위니브 월드 : 새로운 시대 </strong>
-              <dl>
+              <strong class="item-tit"> 위니브 월드 : 새로운 시대 </strong>
+              <dl class="item-list">
                 <div>
-                  <dt>개요</dt>
+                  <dt class="item-list-name">개요</dt>
                   <dd>판타지</dd>
                 </div>
                 <div>
-                  <dt>평점</dt>
+                  <dt class="item-list-name">평점</dt>
                   <dd>9.05</dd>
                 </div>
                 <div>
-                  <dt>개봉</dt>
+                  <dt class="item-list-name">개봉</dt>
                   <dd>20201.9.30</dd>
                 </div>
                 <div>
-                  <dt>출연</dt>
+                  <dt class="item-list-name">출연</dt>
                   <dd>라이켓, 소울곰, 개리씨, 자바독, 파이, 썬, 빙키, 뮤라</dd>
                 </div>
               </dl>
             </article>
-            <a href="#">예매하기</a>
-            <a href="#">예고편</a>
+            <a href="#" class="item-ticket-btn">예매하기</a>
+            <a href="#" class="item-teaser-btn">예고편</a>
           </li>
         </ul>
       </section>
     </section>
-    <footer>
-      <section>
-        <h2>기업 정보</h2>
-        <strong>jungle Cinema</strong>
-        <dl>
-          <dt>회사명</dt>
+    <footer class="footer">
+      <section class="cont-footer">
+        <h2 class="blind">기업 정보</h2>
+        <strong class="footer-tit">jungle Cinema</strong>
+        <dl class="footer-list">
+          <dt class="blind">회사명</dt>
           <dd>(주) 정글 시네마</dd>
-          <dt>대표</dt>
+          <dt class="footer-list-name">대표</dt>
           <dd>라이언</dd>
-          <dt>사업자 번호</dt>
+          <dt class="footer-list-name">사업자 번호</dt>
           <dd>000-0000-0000</dd>
-          <dt>업종</dt>
+          <dt class="blind">업종</dt>
           <dd>광고 영화 및 비디오물 제작업</dd>
-          <dt>주소</dt>
+          <dt class="footer-list-name">주소</dt>
           <dd>서울특별시</dd>
         </dl>
-        <article>
-          <h3>SNS 링크</h3>
-          <ul>
+        <article class="cont-sns">
+          <h3 class="blind">SNS 링크</h3>
+          <ul class="sns-list">
             <li>
-              <a href="#"><img src="./img/twitter.png" alt="트위터" /></a>
+              <a href="#"
+                ><img
+                  src="./img/twitter.png"
+                  alt="트위터"
+                  class="sns-item-twitter"
+              /></a>
             </li>
             <li>
-              <a href="#"><img src="./img/instagram.png" alt="인스타그램" /></a>
+              <a href="#"
+                ><img
+                  src="./img/instagram.png"
+                  alt="인스타그램"
+                  class="sns-item-instagram"
+              /></a>
             </li>
             <li>
-              <a href="#"><img src="./img/facebook.png" alt="페이스북" /></a>
+              <a href="#"
+                ><img
+                  src="./img/facebook.png"
+                  alt="페이스북"
+                  class="sns-item-facebook"
+              /></a>
             </li>
           </ul>
         </article>
-        <small>Copyright &copy; 2021 The Jungle.All rights reserved.</small>
+        <small class="footer-txt"
+          >Copyright &copy; 2021 The Jungle.All rights reserved.</small
+        >
       </section>
     </footer>
   </body>

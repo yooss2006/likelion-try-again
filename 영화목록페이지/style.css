@@ -1,0 +1,60 @@
+body {
+  font-family: "GowunDodum-Regular";
+}
+
+.cont-main {
+  width: 1060px;
+  height: 1170px;
+  background-color: #f2f2f2;
+  margin: 91px auto 0;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+}
+
+.cont-main .tit-main {
+  margin-top: 41px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.cont-main header nav .nav-list {
+  margin: 37px auto 0;
+  padding: 28px 0;
+  width: 650px;
+  border-top: 2px solid #bdbdbd;
+  text-align: center;
+}
+.cont-main header nav .nav-list li {
+  display: inline-block;
+  color: #828282;
+  font-size: 16px;
+}
+.cont-main header nav .nav-list li:nth-child(2) {
+  margin: 0 60px;
+}
+#nav-list-on {
+  font-weight: 900;
+  color: #000000;
+}
+
+.cont-movie {
+  width: 1003px;
+  margin: 0 auto;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+}
+.cont-moive .cont-item {
+}
+
+.cont-movie .cont-item .item-img img {
+  width: 180px;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+}
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
