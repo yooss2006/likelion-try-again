@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
 body {
   font-family: "GowunDodum-Regular";
 }
@@ -38,23 +50,162 @@ body {
 }
 
 .cont-movie {
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  overflow: hidden;
   width: 1003px;
   margin: 0 auto;
   border: 2px solid #bdbdbd;
   border-radius: 15px;
 }
-.cont-moive .cont-item {
+.cont-movie .movie-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  justify-items: center;
+  grid-gap: 23px;
+  padding: 26px 27px;
+  background: #fff;
 }
-
-.cont-movie .cont-item .item-img img {
+.cont-movie .movie-list li .movie-item {
+  width: 220px;
+  height: 441px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(77, 60, 60, 0.3);
+  overflow: hidden;
+}
+.cont-movie .movie-item .item-img img {
+  display: inline-block;
   width: 180px;
   border-radius: 10px;
+  margin: 19px auto 11px;
   border: 1px solid #bdbdbd;
 }
-@font-face {
-  font-family: "GowunDodum-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+.cont-movie .movie-item .item-tit {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+}
+.cont-movie .movie-item .item-list {
+  width: 180px;
+  margin: 12px auto 13px;
+  position: relative;
+  text-align: left;
+}
+.cont-movie .movie-item .item-list div dt,
+.cont-movie .movie-item .item-list div dd {
+  display: inline-block;
+  font-size: 13px;
+}
+.cont-movie .movie-item .item-list div .item-list-name {
+  color: #828282;
+  margin-bottom: 5px;
+}
+.cont-movie .movie-item .item-list .item-list-score {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cont-movie .movie-item .item-list .item-list-score dd {
+  margin-left: 15px;
+}
+.cont-movie .movie-item .item-list .item-list-score dd::before {
+  position: absolute;
+  top: 0px;
+  right: 28px;
+  content: "";
+  background: url(./img/별점이미지.png);
+  width: 14px;
+  height: 14px;
+}
+.cont-movie .movie-item .item-ticket-btn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 16px;
+  border-right: 1px solid #bdbdbd;
+  background: #f2f2f2;
+  font-weight: 500;
+  font-size: 14px;
+  border-top: 1px solid #bdbdbd;
+}
+.cont-movie .movie-item .item-teaser-btn {
+  position: relative;
+  float: right;
+  width: 50%;
+  padding-top: 16px;
+  height: 100%;
+  background: #f2f2f2;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 0;
+  border-top: 1px solid #bdbdbd;
+}
+.cont-movie .movie-item .item-teaser-btn::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("./img/아이콘_재생.png");
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.footer {
+  margin-top: 135px;
+  padding: 53px 0;
+  background: #f2f2f2;
+}
+.footer .cont-footer {
+  width: 1189px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer .cont-footer .footer-tit {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 42px;
+}
+.footer .cont-footer .footer-list {
+  border-top: 1px solid #c4c4c4;
+  padding: 36px 0;
+  display: flex;
+}
+.footer .cont-footer .footer-list dt,
+.footer .cont-footer .footer-list dd {
+  font-size: 14px;
+  color: #4f4f4f;
+}
+.footer .cont-footer .footer-list .footer-list-name {
+  font-weight: 700;
+  margin-right: 3px;
+}
+.footer .cont-footer .footer-list dt::before,
+.footer .cont-footer .footer-list .create-bar::before {
+  content: "|";
+  margin: 0 5px;
+}
+
+.footer .cont-footer .cont-sns {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer .cont-footer .cont-sns .sns-list {
+  display: flex;
+}
+.footer .cont-footer .cont-sns .sns-list li a img {
+  width: 22px;
+  margin-left: 23px;
+}
+.footer .cont-footer .footer-txt {
+  position: absolute;
+  right: 0;
+  bottom: 38px;
 }
